@@ -20,9 +20,10 @@ int main(int argc ,char** argv){
         exit(1);
     }
 
-
-    while(fgetc(fps)!=EOF)
+    char buf[3];
+    while(fgets(buf,2,fps)!=NULL)
         count++;
+   
     
     printf("count:%d\n",count);
 
