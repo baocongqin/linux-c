@@ -5,7 +5,15 @@
 #include <fcntl.h>
 #include <unistd.h>
 
+/*
+	标准IO与文件IO
+	r = O_RDONLY
+	r+ =O_RDWR
+	w  = WRONLY|O_CREATE
+	w+ = O_RDWR|O_CREATE|O_TRUNC
 
+
+*/
 
 int main(int argc, char **argv)
 {
