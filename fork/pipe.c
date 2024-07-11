@@ -1,15 +1,12 @@
-#include <sys/types.h>
-#include <sys/wait.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <string.h>
+#include "apue.h"
 
 int main(int argc, char **argv)
 {
 	int pipefd[2];
 
 	int ret = pipe(pipefd);
+
+	
 
 	if (ret == -1)
 	{
